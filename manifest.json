@@ -1,0 +1,20 @@
+{
+  "name": "MENAAR",
+  "short_name": "MENAAR",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#013220",
+  "icons": [
+    {
+      "src": "./MENAAR-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
