@@ -15,13 +15,13 @@
     <!-- Header Section -->
     <header>
         <div class="navbar">
-            <div class="logo">
+            <div class="logo" style="text-align: left;">
                 <a href="home.html">
-                <img src="site-logo.png" width="300px" alt="MENAAR Logo">
+                <img src="site-logo.png" width="40%"  alt="MENAAR Logo">
             </a>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -29,6 +29,12 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         </div>
 
         <div class="hero-section" id="home">
@@ -82,14 +88,39 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-slider">
+   <!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial-item">
             <blockquote>"MENAAR exceeded our expectations in delivering high-quality construction on time and within budget."</blockquote>
             <cite>- John Doe, CEO of XYZ Company</cite>
         </div>
-    </section>
+        <div class="testimonial-item">
+            <blockquote>"Exceptional service and attention to detail. Highly recommend MENAAR for any construction project."</blockquote>
+            <cite>- Jane Smith, Manager at ABC Corp</cite>
+        </div>
+        <div class="testimonial-item">
+            <blockquote>"Professional, reliable, and timely delivery. We are extremely happy with the results."</blockquote>
+            <cite>- Alan Cooper, Director of DEF Ltd</cite>
+        </div>
+        <div class="testimonial-item">
+            <blockquote>"MENAAR's team demonstrated expertise and great project management skills throughout."</blockquote>
+            <cite>- Lisa Brown, Owner of GHI Ventures</cite>
+        </div>
+        <div class="testimonial-item">
+            <blockquote>"A great partner in building large-scale projects. Their work speaks for itself."</blockquote>
+            <cite>- Robert White, COO of JKL Enterprises</cite>
+        </div>
+        <div class="testimonial-item">
+            <blockquote>"Their attention to detail and commitment to deadlines are commendable. We will definitely work with them again."</blockquote>
+            <cite>- Sarah Lee, Managing Director of MNO Ltd</cite>
+        </div>
+        
+        
+    </div>
+</section>
+
 
     <!-- Call to Action -->
     <section class="cta">
@@ -101,15 +132,19 @@
     <footer>
         <div class="footer-content">
             <p>© 2024 MENAAR. All rights reserved.</p>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+    
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
 
 </body>
 </html>
